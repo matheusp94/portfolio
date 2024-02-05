@@ -7,25 +7,33 @@ views = Blueprint(__name__, "views")
 def home():
     return render_template("index.html", name="Visitante")
 
-#usando query
+# usando query
+
+
 @views.route("/profile")
 def profile():
     args = request.args
     name = args.get('name')
     return render_template("index.html", name=name)
 
-#imprimindo json
+# imprimindo json
+
+
 @views.route("/json")
 def get_json():
     return jsonify({'name': 'matheus', 'idade': 30})
 
-#recebendo dados json
+# recebendo dados json
+
+
 @views.route("data")
 def get_data():
     data = request.json
     return jsonify(data)
 
-#redirecionamento
+# redirecionamento
+
+
 @views.route("/go-to-home")
 def go_to_home():
     return redirect(url_for("views.get_json"))
@@ -35,6 +43,12 @@ def go_to_home():
 def get_perfil():
     return render_template("perfil.html")
 
+
 @views.route("/sobre")
 def get_sobre():
     return render_template("sobre.html")
+
+
+@views.route("/projetos")
+def get_projetos():
+    return render_template("projetos.html")
