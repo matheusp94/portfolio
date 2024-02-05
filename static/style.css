@@ -1,7 +1,16 @@
+
 body {
   margin: 0;
   font-family: 'Garamond', 'Georgia', serif;
   font-size: 17px;
+  color:#ddd;
+  background-image: url('../static/images/background.jpg'); /* Substitua pelo caminho real da sua imagem */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Adiciona essa linha para fazer o fundo fixo */
+  margin: 0;
+  padding: 0;
 }
 
 p {
