@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>Home</title>
+</head>
+
+<body>
+    <div>
+        <div class="topnav">
+            <a href="{{ url_for('views.home') }}">index</a></li>
+            <a href="{{ url_for('views.get_perfil') }}">perfil</a></li>
+            <a href="{{ url_for('views.get_json') }}">#</a></li>
+            <a href="{{ url_for('views.get_data') }}">#</a></li>
+        </div>
+
+        <h1>Perfil</h1>
+        <p>Olá {{ name }}! Bem vindo ao meu profile.</p>
+
+    </div>
+
+</body>
+
+</html>
