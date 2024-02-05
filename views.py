@@ -30,7 +30,11 @@ def get_data():
 def go_to_home():
     return redirect(url_for("views.get_json"))
 
-#testando
+
 @views.route("/perfil")
 def get_perfil():
     return render_template("perfil.html")
+
+@views.route("/sobre")
+def get_sobre():
+    return render_template("sobre.html")

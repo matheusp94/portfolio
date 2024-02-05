@@ -14,11 +14,11 @@
             <a href="{{ url_for('views.home') }}">index</a></li>
             <a href="{{ url_for('views.get_perfil') }}">perfil</a></li>
             <a href="{{ url_for('views.get_json') }}">#</a></li>
-            <a href="{{ url_for('views.get_data') }}">#</a></li>
+            <a href="{{ url_for('views.get_sobre') }}">sobre</a></li>
         </div>
 
-        <h1>Home Page</h1>
-        <p>Olá {{ name }}! Bem vindo ao meu portifolio. Essa página foi criada utilizando Flask. Utilize o menu de navegação acima para fácil acesso as informações desejadas.</p>
+        <h1>Saudações</h1>
+        <p>Olá, {{ name }}! Bem vindo ao meu portifolio. Essa página foi criada utilizando <a href="https://flask.palletsprojects.com/en/3.0.x/">Flask</a>. Utilize o menu de navegação acima para fácil acesso as informações desejadas.</p>
 
     </div>
 
