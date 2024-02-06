@@ -52,3 +52,7 @@ def get_sobre():
 @views.route("/projetos")
 def get_projetos():
     return render_template("projetos.html")
+
+@views.route("/skills")
+def get_skills():
+    return render_template("skills.html")

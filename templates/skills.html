@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>Home</title>
+</head>
+
+<body>
+    <div>
+        <div class="topnav">
+            <a href="{{ url_for('views.home') }}">index</a></li>
+            <a href="{{ url_for('views.get_perfil') }}">perfil</a></li>
+            <a href="{{ url_for('views.get_json') }}">#</a></li>
+            <a href="{{ url_for('views.get_sobre') }}">sobre</a></li>
+            <a href="{{ url_for('views.get_skills') }}">skills</a></li>
+            <a href="{{ url_for('views.get_projetos') }}">projetos</a></li>
+        </div>
+
+        <h1>Skills</h1>
+        <hr>
+        <div class="container">
+            <ul class="cloud" role="navigation" aria-label="Webdev tag cloud">
+                <li><a data-weight="4" href="/tag/http">Pandas</a></li>
+                <li><a data-weight="2" href="/tag/ember">Photoshop</a></li>
+                <li><a data-weight="5" href="/tag/sass">Javascript</a></li>
+                <li><a data-weight="6" href="/tag/html">Python</a></li>
+                <li><a data-weight="8" href="/tag/flexbox">Data Analysis</a></li>
+                <li><a data-weight="4" href="/tag/api">Microsoft Office</a></li>
+                <li><a data-weight="5" href="/tag/vuejs">SQL</a></li>
+                <li><a data-weight="6" href="/tag/grid">Flask</a></li>
+                <li><a data-weight="5" href="/tag/sass">UX & UI</a></li>
+                <li><a data-weight="3" href="/tag/rest">Java</a></li>
+                <li><a data-weight="9" href="/tag/javascript">Machine Learning</a></li>
+                <li><a data-weight="4" href="/tag/animation">HTML</a></li>
+                <li><a data-weight="5" href="/tag/react">React</a></li>
+                <li><a data-weight="8" href="/tag/css">CSS</a></li>
+                <li><a data-weight="1" href="/tag/cache">R</a></li>
+                <li><a data-weight="5" href="/tag/less">Excel</a></li>
+              </ul>
+        </div>
+
+    </div>
+
+    </script>
+</body>
+
+</html>
