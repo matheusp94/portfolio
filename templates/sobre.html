@@ -13,7 +13,6 @@
         <div class="topnav">
             <a href="{{ url_for('views.home') }}">index</a></li>
             <a href="{{ url_for('views.get_perfil') }}">perfil</a></li>
-            <a href="{{ url_for('views.get_json') }}">#</a></li>
             <a href="{{ url_for('views.get_sobre') }}">sobre</a></li>
             <a href="{{ url_for('views.get_skills') }}">skills</a></li>
             <a href="{{ url_for('views.get_projetos') }}">projetos</a></li>
@@ -45,7 +44,13 @@
         <p> Obrigado pela visita!</p>
         <hr>
 
-        <p> <a href="https://github.com/matheusp94"><img src="'../static/images/github.png" alt="Github" style="width:42px;height:42px;"></a></p>
+        <p> 
+            <a href="https://github.com/matheusp94"><img src="{{ url_for('static', filename='images/github.png') }}" alt="Github" style="width:42px;height:42px;"></a>
+
+            <a href="https://www.linkedin.com/in/matheus-matos-p094/"><img src="{{ url_for('static', filename='images/linkedin.png') }}" alt="Linkedin" style="width:42px;height:42px;"></a>
+
+            <a href="https://medium.com/@matheus.p940/"><img src="{{ url_for('static', filename='images/medium.png') }}" alt="Medium" style="width:42px;height:42px;"></a>
+        </p>
 
     </div>
 

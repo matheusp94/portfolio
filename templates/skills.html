@@ -13,7 +13,6 @@
         <div class="topnav">
             <a href="{{ url_for('views.home') }}">index</a></li>
             <a href="{{ url_for('views.get_perfil') }}">perfil</a></li>
-            <a href="{{ url_for('views.get_json') }}">#</a></li>
             <a href="{{ url_for('views.get_sobre') }}">sobre</a></li>
             <a href="{{ url_for('views.get_skills') }}">skills</a></li>
             <a href="{{ url_for('views.get_projetos') }}">projetos</a></li>
@@ -21,25 +20,35 @@
 
         <h1>Skills</h1>
         <hr>
-        <div class="container">
+        <div class="container" style="max-width: 600px;">
             <ul class="cloud" role="navigation" aria-label="Webdev tag cloud">
-                <li><a data-weight="4" href="/tag/http">Pandas</a></li>
-                <li><a data-weight="2" href="/tag/ember">Photoshop</a></li>
-                <li><a data-weight="5" href="/tag/sass">Javascript</a></li>
-                <li><a data-weight="6" href="/tag/html">Python</a></li>
-                <li><a data-weight="8" href="/tag/flexbox">Data Analysis</a></li>
-                <li><a data-weight="4" href="/tag/api">Microsoft Office</a></li>
-                <li><a data-weight="5" href="/tag/vuejs">SQL</a></li>
-                <li><a data-weight="6" href="/tag/grid">Flask</a></li>
-                <li><a data-weight="5" href="/tag/sass">UX & UI</a></li>
-                <li><a data-weight="3" href="/tag/rest">Java</a></li>
-                <li><a data-weight="9" href="/tag/javascript">Machine Learning</a></li>
-                <li><a data-weight="4" href="/tag/animation">HTML</a></li>
-                <li><a data-weight="5" href="/tag/react">React</a></li>
-                <li><a data-weight="8" href="/tag/css">CSS</a></li>
-                <li><a data-weight="1" href="/tag/cache">R</a></li>
-                <li><a data-weight="5" href="/tag/less">Excel</a></li>
-              </ul>
+                <li><a data-weight="4" href="https://pandas.pydata.org">Pandas</a></li>
+                <li><a data-weight="2" href="https://pandas.pydata.org">Photoshop</a></li>
+                <li><a data-weight="5"
+                        href="https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/What_is_JavaScript">Javascript</a>
+                </li>
+                <li><a data-weight="6" href="https://www.python.org">Python</a></li>
+                <li><a data-weight="8"
+                        href="https://www.simplilearn.com/data-analysis-methods-process-types-article">Data Analysis</a>
+                </li>
+                <li><a data-weight="4"
+                        href="https://www.microsoft.com/pt-br/microsoft-365/business/compare-all-microsoft-365-business-products">Microsoft
+                        Office</a></li>
+                <li><a data-weight="5" href="https://aws.amazon.com/pt/what-is/sql/">SQL</a></li>
+                <li><a data-weight="6" href="https://flask.palletsprojects.com/en/3.0.x/">Flask</a></li>
+                <li><a data-weight="5"
+                        href="https://medium.com/aela/qual-a-diferença-entre-ux-e-ui-design-entenda-de-uma-vez-95b4aeb68479">UX
+                        & UI</a></li>
+                <li><a data-weight="2" href="https://nodejs.org/en">Node.js</a></li>
+                <li><a data-weight="3" href="https://www.java.com/pt-BR/">Java</a></li>
+                <li><a data-weight="9" href="">Machine Learning</a></li>
+                <li><a data-weight="3" href="https://www.json.org/json-pt.html">Json</a></li>
+                <li><a data-weight="4" href="">HTML</a></li>
+                <li><a data-weight="3" href="https://react.dev">React</a></li>
+                <li><a data-weight="8" href="">CSS</a></li>
+                <li><a data-weight="2" href="https://www.r-project.org">R</a></li>
+                <li><a data-weight="5" href="">Excel</a></li>
+            </ul>
         </div>
 
     </div>
